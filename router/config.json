@@ -1,0 +1,12 @@
+{
+  "BusinessLogic": [
+    {
+      "Url": "/login",
+      "Action": "LoginTask"
+    },
+    {
+      "Url": "/view",
+      "Action": "LoginTask"
+    }
+  ]
+}
