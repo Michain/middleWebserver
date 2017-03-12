@@ -8,7 +8,7 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
-	. "webserver/NewBaseJsonBean"
+	. "middleWebserver/NewBaseJsonBean"
 )
 
 func GetServerConfig() (string, error) {

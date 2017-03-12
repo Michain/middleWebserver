@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"net/http"
-	. "webserver/conf"
-	. "webserver/router"
+	. "middleWebserver/conf"
+	. "middleWebserver/router"
 )
 
 func main() {
