@@ -29,3 +29,7 @@ func NewInputJsonBean() *Input {
 func NewServerConfigBean() *ServerConfigBean {
 	return &ServerConfigBean{}
 }
+
+type OutputDate struct {
+	Response string `json:"Response"`
+}

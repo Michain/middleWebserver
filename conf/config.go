@@ -21,7 +21,7 @@ func GetServerConfig() (string, error) {
 	path, _ := filepath.Abs(file)
 	fmt.Printf("[Path=]%s", path)
 	rs := []rune(path)
-	rl := len(rs) - 10
+	rl := len(rs) - 19
 	configpath := string(rs[0:rl])
 	configfile := "/conf/config.json"
 	ServerConfigFile := configpath + configfile

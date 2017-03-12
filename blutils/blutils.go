@@ -32,4 +32,19 @@ func TransactionComplete(w http.ResponseWriter, req *http.Request) {
 	//模拟延时
 	time.Sleep(time.Second * 1)
 	fmt.Println(searchReq)
+	result := ReplySet()
+
+	//向客户端返回JSON数据
+	bytes, _ := json.Marshal(result)
+	fmt.Fprint(w, string(bytes))
+}
+
+func ReplySet() BaseJsonBean {
+	result := BaseJsonBean{}
+	result.Code = 000
+	result.Header = "Content-Type, application/json;charset=UTF-8"
+	result.Data = "OK"
+	result.Message = "Sucessful"
+
+	return result
 }
