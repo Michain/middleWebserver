@@ -22,7 +22,6 @@ func PostComplete(SerialNumber string,Trstype string,TimeStamp string) string{
 
 	req.Header.Add("content-type", "application/json")
 	req.Header.Add("cache-control", "no-cache")
-	req.Header.Add("postman-token", "bf098433-e4ba-7716-922b-4c21cd0a33eb")
 
 	res, _ := http.DefaultClient.Do(req)
 
