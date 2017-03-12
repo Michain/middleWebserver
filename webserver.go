@@ -22,7 +22,7 @@ func main() {
 	//Listen Http server's hostip and port for request
 	//服务器监听地址和端口号
 	fmt.Printf("http server listening at %s end\n", httpserver)
-	err = http.ListenAndServe(httpserver, nil)
+	err = http.ListenAndServe(":5000", nil)
 	//catch http server startup exception
 	//服务器监听异常捕获处理
 	if err != nil {
